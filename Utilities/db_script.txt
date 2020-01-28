@@ -1,0 +1,26 @@
+CREATE TABLE users(
+	id serial PRIMARY KEY,
+	username varchar(255) NOT NULL UNIQUE,
+	name varchar(255) NOT NULL,
+	password varchar(255) NOT NULL,
+	cpf varchar(255) NOT NULL
+);
+
+INSERT INTO users(username,name,password,cpf)
+VALUES ('pauloedu','Paulo Eduardo','123Mudar@','49782385875');
+
+INSERT INTO users(username,name,password,cpf)
+VALUES ('luizedu','Luiz Eduardo','123Mudar@','36716682023');
+
+INSERT INTO users(username,name,password,cpf)
+VALUES ('juliocez','Julio Cezar','123Mudar@','85420983079');
+
+INSERT INTO users(username,name,password,cpf)
+VALUES ('gabrielmil','Gabriel Milan','123Mudar@','71888994010');
+
+INSERT INTO users(username,name,password,cpf)
+VALUES ('rodrigofer','Rodrigo Fera','123Mudar@','85012310020');
+
+INSERT INTO users(username,name,password,cpf)
+VALUES ('rafagameplays','Rafael Nao Paga Nada','123Mudar@','12024927033');
+
