@@ -7,6 +7,6 @@ router.post('/createUser', ctrls.createUser);
 
 router.post('/pedidos', ctrls.pedidos);
 
-router.post('/login', ctrls.login)
+router.post('/login', ctrls.login);
 
 export default router;
