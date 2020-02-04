@@ -21,6 +21,24 @@ async function login(req: Request, res: Response, next: NextFunction){
     }
 }
 
+async function selectUsers(req: Request, res: Response, next: NextFunction){
+    try {
+        const select = await pgFunc.Functions.selectUsers();
+        res.status(200).json(select);
+    } catch (error) {
+        res.status(400).json(error.message);
+    }
+}
+
+async function selectPedidos(req: Request, res: Response, next: NextFunction){
+    try {
+        const select = await mgFunc.Functions.selectPedidos();
+        res.status(200).json(select);
+    } catch (error) {
+        res.status(400).json(error.message);
+    }
+}
+
 async function pedidos(req: Request, res: Response, next: NextFunction){
     try {
         const user = await pgFunc.Functions.getUserByEmail(req.body.email);
@@ -41,5 +59,4 @@ async function pedidos(req: Request, res: Response, next: NextFunction){
     }
 }
 
-
-export default {createUser, pedidos, login}
+export default {createUser, pedidos, login, selectUsers, selectPedidos}

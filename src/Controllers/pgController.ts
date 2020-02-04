@@ -32,6 +32,16 @@ import User from '../Models/userModelPG'
         }
     },
 
+    async selectUsers(): Promise<any>{
+        try {
+            const user = User.User.findAll();
+        
+            return user
+        } catch (error) {
+            return error
+        }
+    },
+
     async createUser(body:any): Promise<any>{
         try {
             const signup = User.User.create({

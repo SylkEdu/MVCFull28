@@ -12,6 +12,15 @@ const  Functions:any = {
         }
     },
 
+    async selectPedidos(): Promise<any>{
+        try {
+            const query: IPedidoModel = await pedidoModelMG.find();
+            return query
+        } catch (error) {
+            return error
+        }
+    },
+
 }
 
 export default {Functions}
