@@ -12,7 +12,7 @@
     "git": "^0.1.5",
     "mongoose": "^5.8.7",
     "pg": "^7.8.2",
-    "redis": "^2.8.0",
+    "redis": "^3.1.1",
     "reflect-metadata": "^0.1.13",
     "sequelize": "^5.21.3",
     "sequelize-typescript": "^1.1.0",
